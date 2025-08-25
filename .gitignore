@@ -1,0 +1,32 @@
+# --- Archivos de Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+
+# --- Archivos de configuración locales ---
+*.env
+.env.*
+
+# --- Archivos de resultados y datos ---
+data/*
+!data/.gitkeep
+!data/*.csv
+!data/*.xls
+!data/*.xlsx
+
+# --- Jupyter y temporales ---
+.ipynb_checkpoints/
+*.ipynb
+*.log
+
+# --- macOS / IDEs ---
+.DS_Store
+.vscode/
+.idea/
