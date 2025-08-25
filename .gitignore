@@ -15,11 +15,7 @@ env/
 .env.*
 
 # --- Archivos de resultados y datos ---
-data/*
-!data/.gitkeep
-!data/*.csv
-!data/*.xls
-!data/*.xlsx
+data/
 
 # --- Jupyter y temporales ---
 .ipynb_checkpoints/
