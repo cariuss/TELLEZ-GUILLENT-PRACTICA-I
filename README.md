@@ -1,37 +1,87 @@
 # Práctica: Minería Ilegal
 
-El presente proyecto tiene como finalidad demostrar un flujo sencillo de **ETL y análisis de datos** aplicado al dataset **EVOA** de Datos Abiertos Colombia "https://datos.gov.co/", permitiendo extraer información sobre la explotación ilícita de oro de aluvión, generar estadísticas básicas, visualizar resultados y aplicar un modelo de **Machine Learning** introductorio.
+Este proyecto tiene como finalidad demostrar un flujo sencillo de ETL y análisis de datos aplicado al dataset EVOA de Datos Abiertos Colombia
+, permitiendo extraer información sobre la explotación ilícita de oro de aluvión, generar estadísticas básicas, visualizar resultados y aplicar un modelo introductorio de Machine Learning con TensorFlow.
 
-### Integrantes: Juan José Tellez, Carlos Enrique Guillent
+## Integrantes
 
-### Grupo: 4
+- Juan José Tellez
 
-### ¿Qué hace?
+- Carlos Enrique Guillent
 
-1. **Conecta** a la API pública de datos.gov.co (recurso `g48d-yu62`).
-2. **Extrae** todos los registros (con paginación automática).
-3. **Limpia/transforma** columnas numéricas (año y hectáreas).
-4. **Guarda** los datos limpios en `data/mineria_ilegal.csv`.
-5. **Analiza** : top 10 departamentos por hectáreas de explotación ilícita.
-6. **Visualiza** : genera `data/top10_ilicita.png` (gráfico de barras).
-7. **ML** : entrena una **regresión lineal** que intenta predecir hectáreas ilícitas usando otras variables del dataset y muestra el **R²** de prueba.
+  **Grupo 4**
 
-## Requisitos
+## 🚀 ¿Qué hace este proyecto?
 
-* **Python** 3.12+
-* **Poetry** (gestor de dependencias)
-  * macOS: `brew install poetry`
+Conecta a la API pública de datos.gov.co (recurso g48d-yu62).
 
-### Clonar el repositorio:
+Extrae los registros (con paginación automática).
 
-**git clone** https://github.com/cariuss/TELLEZ-GUILLENT-PRACTICA-I.git
+Limpia y transforma las columnas relevantes.
 
-**cd** TELLEZ-GUILLENT-PRACTICA-I
+Genera estadísticas básicas, como el Top 10 de departamentos con mayor explotación ilícita.
 
-### Instalar dependencias
+Visualiza resultados en gráficos con Matplotlib.
 
-**poetry** install
+Entrena un modelo sencillo de regresión lineal con TensorFlow, mostrando la evolución del loss y métricas de evaluación (MSE y R²).
 
-### **Ejecutar el proyecto**
+## 📋 Requisitos
 
-**poetry run python** practica_1.py (contiene el main de ejecución)
+Python 3.13 o superior
+
+[Poetry](https://python-poetry.org/) 1.8+
+
+Git
+
+⚙️ Instalación
+
+Clonar el repositorio y entrar a la carpeta:
+
+``` bash
+git clone https://github.com/cariuss/TELLEZ-GUILLENT-PRACTICA-I.git
+cd TELLEZ-GUILLENT-PRACTICA-I
+```
+
+Instalar dependencias con Poetry:
+
+``` bash
+poetry install
+```
+
+Registrar el kernel de Jupyter:
+
+```bash
+poetry run python -m ipykernel install --user --name=tellez-guillent-practica-i
+```
+
+## 📓 Ejecutar el Notebook
+
+Iniciar Jupyter:
+
+```bash
+poetry run jupyter notebook
+```
+
+Abrir el archivo:
+
+> notebooks/practica.ipynb
+
+Seleccionar el kernel:
+
+> tellez-guillent-practica-i
+
+## 📊 Resultados esperados
+
+Gráfico con el Top 10 de departamentos.
+
+Entrenamiento de modelo mostrando la evolución de la pérdida (loss) por épocas.
+
+Métricas de evaluación: Error cuadrático medio (MSE) y Coeficiente de determinación (R²).
+
+Visualización de predicciones vs valores reales en un gráfico de dispersión.
+
+## 📚 Referencias
+
+Dataset: [Explotación de oro de aluvión - EVOA](https://www.datos.gov.co/resource/g48d-yu62.json)
+
+Chollet, François. Deep Learning with Python. 2nd Edition, Manning.
