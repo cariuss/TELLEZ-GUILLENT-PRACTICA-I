@@ -19,7 +19,6 @@ data/
 
 # --- Jupyter y temporales ---
 .ipynb_checkpoints/
-*.ipynb
 *.log
 
 # --- macOS / IDEs ---
