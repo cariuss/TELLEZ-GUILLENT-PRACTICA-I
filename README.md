@@ -64,7 +64,7 @@ poetry run jupyter notebook
 
 Abrir el archivo:
 
-> notebooks/practica.ipynb
+> Analisis-Mineria-Ilegal.ipynb
 
 Seleccionar el kernel:
 
